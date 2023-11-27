@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { CodeBlock } from '@skeletonlabs/skeleton';
 	let lines: string[] = [];
-	let value: string = "this\n\nis\n\na\n\nsample";
+	let value: string = "";
 
 	$: lines = value.split("\n\n").map((line) => line.trim()).filter((line) => line.length > 0);
 </script>
